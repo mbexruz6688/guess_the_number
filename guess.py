@@ -1,21 +1,21 @@
 import random
-def son_ber():
+def give_a_num():
     return random.randrange(50, 100)
-def input_ol():
+def get_num():
     return int(input("Sonni taxmin qilib ko'ring: "))
-def son_kattaroq():
-    print(f"Tasodifiy son {son}dan katta ")
-def son_kichikroq():
-    print(f"Tasodifiy son {son}dan kichik ")
-def son_topildi():
-    print("Sonni topdingiz!")
-a = son_ber()
+def num_is_biger():
+    print(f"Random number{son}is bigger")
+def num_is_smaller():
+    print(f"Random number{son}is smaller")
+def num_is_detected():
+    print("You win!")
+a = give_a_num()
 while True:
-    son = input_ol()
+    son = get_num()
     if son < a:
-        son_kattaroq()
+        num_is_bigger()
     elif son > a:
-        son_kichikroq()
+        num_is_smaller()
     else:
-        son_topildi()
+        num_is_detected()
         break
